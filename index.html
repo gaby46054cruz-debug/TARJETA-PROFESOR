@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día del Profesor</title>
+  <!-- Tipografía moderna Google Fonts (Outfit) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="uno.css">
+</head>
+<body>
+
+  <!-- Capa de fondo para la imagen -->
+  <div class="bg-overlay"></div>
+
+  <!-- Barra de progreso superior -->
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Encabezado Fijo Superior Izquierdo -->
+  <header class="top-header">
+    <div class="logo-box">
+      <!-- Cambia "logo.png" por tu archivo de logo cuando lo tengas -->
+      <img src="im.jpeg" alt="Logo Escuela" id="schoolLogo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3429/3429149.png'">
+    </div>
+    <div class="brand-info">
+      <h1 class="school-title">IES integración de las Américas</h1>
+      <span class="careers-tag">Instituto de enseñanza superior</span>
+    </div>
+  </header>
+
+  <!-- Área Central de Mensajes Animados -->
+  <main class="content-wrapper">
+    <div class="text-container">
+      <p id="typedText" class="dynamic-text"></p>
+      <span class="cursor" id="cursor">|</span>
+    </div>
+  </main>
+
+  <script src="uno.js"></script>
+</body>
+</html>
