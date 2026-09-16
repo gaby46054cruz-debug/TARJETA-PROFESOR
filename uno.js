@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const messages = [
     "¡Feliz Día del Profesor! 💡",
     "A quienes forman a los futuros profesionales de la ciencia y la tecnología.",
-    "A nuestros docentes de Redes y Computación, que interconectan ideas y abren nuevos caminos. 🌐",
+    "A nuestros docentes de Computación y redes, que interconectan ideas y abren nuevos caminos. 🌐",
     "A nuestros docentes de automatización y robótica industrial, que dan vida al diseño, la automatización y el futuro. ⚙️🤖",
     "Gracias por guiar cada proyecto con dedicación, paciencia y verdadera pasión.",
     "Su enseñanza trasciende las aulas y deja una huella imborrable en todos nosotros. ✨",
