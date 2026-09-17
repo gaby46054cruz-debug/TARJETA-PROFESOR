@@ -35,15 +35,15 @@
   <!-- Área Central de Mensajes Animados -->
   <main class="content-wrapper">
     <div class="text-container">
-      <p id="typedText" class="dynamic-text"></p>
-      <span class="cursor" id="cursor">|</span>
-<!-- Reemplaza "musica.mp3" por el nombre de tu archivo de audio local -->
-<audio id="bgMusic" loop preload="auto">
-  <source src="musica.ogg" type="audio/ogg">
-</audio>
-
+      <p id="typedText" class="dynamic-text"></p>
     </div>
   </main>
+
+<span class="cursor" id="cursor">|</span>
+<audio id="bgMusic" loop preload="auto">
+  <source src="musica.ogg" type="audio/ogg">
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
 
   <script src="uno.js"></script>
 </body>
