@@ -79,3 +79,25 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(updateProgress);
   typeMessage();
 });
+// Intentar reproducir la música automáticamente
+const bgMusic = document.getElementById('bgMusic');
+
+function playAudio() {
+  if (bgMusic) {
+    bgMusic.volume = 0.5; // Ajusta el volumen aquí si lo deseas (de 0.0 a 1.0)
+    bgMusic.play().catch(() => {
+      // Los navegadores móviles bloquean el audio automático hasta la primera interacción del usuario.
+      // Esto asegura que la música suene al tocar cualquier parte de la pantalla si el navegador la bloquea al inicio.
+      const startOnInteraction = () => {
+        bgMusic.play();
+        document.removeEventListener('touchstart', startOnInteraction);
+        document.removeEventListener('click', startOnInteraction);
+      };
+      document.addEventListener('touchstart', startOnInteraction);
+      document.addEventListener('click', startOnInteraction);
+    });
+  }
+}
+
+playAudio();
+
